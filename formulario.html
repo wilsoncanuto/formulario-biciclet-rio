@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORMULARIO</title>
+<meta charset='utf-8'>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:verdana;
+}
+
+h1{
+font-size:2.5em;
+color:blue;
+text-align:center;
+background-color:lightblue;
+}
+
+form{
+border:6px solid blue;
+margin:45px auto;
+width:48%;
+padding:15px;
+}
+
+.lbl1{
+display:inline-block;
+width:80px;
+}
+
+.dv1{
+margin-bottom:25px;
+
+}
+
+.area{
+margin-top:15px;
+display:flex;
+width:90%;
+
+}
+
+.final{
+margin:50px auto;
+width:30%;
+}
+
+.tiposexo{
+border:1px solid black;
+width:40%;
+padding:0 5px;
+}
+
+.ts{
+margin-top:7px;
+margin-bottom:8px;
+}
+
+input { 
+background-color: #B0E0E6; 
+font: 12px verdana, arial, helvetica, sans-serif;
+color:#003399;
+border:2px solid #000099;
+}
+
+</style>
+</head>
+<body>
+<h1>BICICLETÁRIO INTELIGENTE</h1>
+
+<form action='leformulario.jsp' method='post'>
+<div class='dv1'>
+<label class='lbl1'>Nome</label>
+<input type='text' id="nome" name="nome" placeholder="Digite seu nome" required size='30' maxlength='15'>
+
+</div>
+<div class='dv1'>
+<label class='lbl1'>E-mail</label>
+<input type="email" id="email" name="email" placeholder="Digite seu E-Mail" required size='30' maxlength='15'>
+
+</div>
+<div class='dv1'>
+<label class='lbl1'>Fone</label>
+<input type='text' id="telefone" name="telefone" placeholder="Digite seu Telefone" size='30' maxlength='15'>
+
+</div>
+<div class='area'>
+	<div class='tiposexo'>
+		<div class='ts'>
+		<input type="radio" id='masc' name='sexo' value='M'>
+		<label for='masc'>Masculino</label>
+		</div>
+		<div class='ts'>
+		<input type="radio" id='fem' name='sexo' value='F'>
+		<label for='masc'>Feminino</label>
+		</div>
+	     </div>
+	</select>
+</div>
+<br>
+<select name="uf" id="uf">
+	<option value="Estado">Estado</option>
+	<option value="SP">SP</option>
+	<option value="RJ">RJ</option>
+	<option value="BH">BH</option>
+	<option value="MG">MG</option>
+	<option value="RS">RS</option>
+	<option value="MT">MT</option>
+	<option value="AM">AM</option>
+ </select>
+</div>
+  <select name="bicicletas" id="bicicletas">
+	<option value="Modelo_de_bicicleta">Modelo de bicicleta</option>
+	<option value="Caloi10">Caloi10</option>
+	<option value="Strada">strada</option>
+	<option value="Sensen">sensen</option>
+	<option value="Treck">treck</option>
+	<option value="Bike_comum">bike comum</option>
+	<option value="Outros">outros</option>
+  </select>
+</div>
+<div class='final'>
+<input type="submit" class='btn'>
+<input type="reset"  value= 'Limpar' class='btn'>
+</div>
+</form>
+</body>
+</html>
